@@ -2,6 +2,20 @@
   <img src="https://ps.w.org/botblocker-security/assets/banner-1544x500.png?rev=3405280" alt="BotBlocker Security">
 </p>
 
+<p align="center">
+  <b>English</b> ·
+  <a href="./README_de.md">Deutsch</a> ·
+  <a href="./README_es.md">Español</a> ·
+  <a href="./README_fr.md">Français</a> ·
+  <a href="./README_pl.md">Polski</a> ·
+  <a href="./README_pt.md">Português</a> ·
+  <a href="./README_ru.md">Русский</a> ·
+  <a href="./README_uk.md">Українська</a> ·
+  <a href="./README_ar.md">العربية</a> ·
+  <a href="./README_zh.md">中文</a> ·
+  <a href="./README_ja.md">日本語</a>
+</p>
+
 <h1 align="center">BotBlocker Security</h1>
 
 <p align="center">
@@ -59,20 +73,28 @@ Auto-detects 25+ e-commerce platforms and 150+ payment providers (Stripe, PayPal
 - Clean uninstall - zero leftover data
 
 ### 🚀 PRO Plans
-- **Cloud threat intelligence** - 5M+ attack IPs, hundreds of thousands of bot signatures, updated daily
-- **Zero-day behavioral & heuristic detection** - catches unknown attack patterns before signatures exist
-- **VPN, Tor, proxy, ASN, and hosting reputation checks** - cross-referenced against global databases
-- **Early Init Mode** - filtering before WordPress Core loads, maximum resource savings
-- **Premium addons** - Security Headers, Hide Login URL, Speed Up WordPress (14 optimizations), Malware Scanner (25 file patterns + 7 DB tables)
-- **Priority support** - 24-hour response time
 
-| Plan | Price | Cloud checks/mo |
-|------|-------|-----------------|
-| **Premium** | $12/month | 25,000 |
-| **Pro** | $50/month | 100,000 |
-| **Ultimate** | $100/month | 250,000 + emergency 24h support |
+| Feature | Free | Premium | Pro | Ultimate |
+|---|---|---|---|---|
+| Real-time visitor statistics | ✓ | ✓ | ✓ | ✓ |
+| MU-Mode | ✓ | ✓ | ✓ | ✓ |
+| Brute-force protection | ✓ | ✓ | ✓ | ✓ |
+| Fake crawler detection (FCrDNS) | ✓ | ✓ | ✓ | ✓ |
+| Local bot blocking | ✓ | ✓ | ✓ | ✓ |
+| Redis / Memcached integration | ✓ | ✓ | ✓ | ✓ |
+| Early Init Mode | — | ✓ | ✓ | ✓ |
+| Cloud IP intelligence | — | ✓ | ✓ | ✓ |
+| Zero-day botnet updates | — | ✓ | ✓ | ✓ |
+| 5M+ bots signatures | — | ✓ | ✓ | ✓ |
+| Behavioral analysis engine | — | ✓ | ✓ | ✓ |
+| Cloud checks / month | — | 25k | 100k | 250k |
+| Unlock Addons | — | ✓ | ✓ | ✓ |
+| Priority support | — | ✓ | ✓ | ✓ |
+| Emergency support (24h) | — | — | — | ✓ |
+| **Monthly price** | **Free** | **$12** | **$50** | **$100** |
+| **Annual price** | **Free** | **$11/mo** | **$45.8/mo** | **$91.6/mo** |
 
-Annual billing includes 1 month free. **30-day money-back guarantee.** Licensed per domain via Freemius.
+Annual billing includes 1 month free. Licensed per domain via Freemius.
 [Compare plans →](https://botblocker.top/pricing/)
 
 ---
@@ -88,20 +110,6 @@ Annual billing includes 1 month free. **30-day money-back guarantee.** Licensed 
 | **Free tier limits** | None - full firewall, all CAPTCHAs, full 2FA | Crippled features, nag screens |
 | **Privacy** | All data stays on your server | Telemetry, external API calls |
 | **Measured overhead** | +3–15ms for verified visitors | +20–200ms |
-
----
-
-## Trusted by Users
-
-⭐⭐⭐⭐⭐ **5.0 rating** on WordPress.org
-
-> "Replaced two security plugins and a CAPTCHA plugin with one. Site is faster and the spam stopped overnight."
-> -- WordPress.org user
-
-> "Probably the best and fastest anti-bot. It actually reduced server load noticeably! Thank you so much."
-> -- alexeyit, WordPress.org
-
-[Read all reviews →](https://wordpress.org/support/plugin/botblocker-security/reviews/)
 
 ---
 
