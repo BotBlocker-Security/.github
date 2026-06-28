@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="https://ps.w.org/botblocker-security/assets/banner-1544x500.png?rev=3405280" alt="BotBlocker Security">
 </p>
 
@@ -59,8 +59,17 @@ Tres capas de interceptación detienen el tráfico malicioso en `wp-config.php` 
 
 ### 🔒 Seguridad de Inicio de Sesión y 2FA (Gratuito)
 - **Autenticación de Dos Factores** - estándar TOTP (Google Authenticator, Authy, Bitwarden)
-- **9 modos CAPTCHA** - Silent Auto-Verify, Shapes (Canvas 60fps), Colors, Images, Digits, Hold Button, Single Button, reCAPTCHA v2/v3
-- **CAPTCHA Híbrido** - combina CAPTCHA interno con reCAPTCHA v3 para defensa de dos capas
+- **9 modos CAPTCHA**:
+  - **Silent Auto-Verify** -- los usuarios reales pasan automáticamente sin clics, los bots ven "Acceso denegado"
+  - **Shapes CAPTCHA** -- Canvas 60fps con figuras geométricas en movimiento, ~100 veces más difícil de descifrar para IA que reCAPTCHA
+  - **Color CAPTCHA** -- selecciona la combinación de colores correcta
+  - **Images CAPTCHA** -- desafío de reconocimiento visual
+  - **Digits CAPTCHA** -- verificación numérica
+  - **Hold Button CAPTCHA** -- verificación humana de mantener pulsado
+  - **Single Button CAPTCHA** -- verificación de un clic
+  - **reCAPTCHA v2** -- "No soy un robot" de Google
+  - **reCAPTCHA v3** -- verificación invisible basada en puntuación
+- **CAPTCHA Híbrido** -- combina cualquier CAPTCHA interno con reCAPTCHA v3 para defensa invisible de dos capas
 - **Ocultar URL de inicio de sesión** *(PRO)*
 
 ### 💳 Bypass de Pasarelas de Pago (Gratuito)
@@ -82,15 +91,15 @@ Detección automática de más de 25 plataformas de e-commerce y más de 150 pro
 | Detección de crawlers falsos (FCrDNS) | ✓ | ✓ | ✓ | ✓ |
 | Bloqueo local de bots | ✓ | ✓ | ✓ | ✓ |
 | Integración con Redis / Memcached | ✓ | ✓ | ✓ | ✓ |
-| Modo Early Init | — | ✓ | ✓ | ✓ |
-| Inteligencia de IP en la nube | — | ✓ | ✓ | ✓ |
-| Actualizaciones zero-day de botnets | — | ✓ | ✓ | ✓ |
-| Más de 5M de firmas de bots | — | ✓ | ✓ | ✓ |
-| Motor de análisis de comportamiento | — | ✓ | ✓ | ✓ |
-| Verificaciones cloud / mes | — | 25k | 100k | 250k |
-| Desbloquear Addons | — | ✓ | ✓ | ✓ |
-| Soporte prioritario | — | ✓ | ✓ | ✓ |
-| Soporte de emergencia (24h) | — | — | — | ✓ |
+| Modo Early Init | -- | ✓ | ✓ | ✓ |
+| Inteligencia de IP en la nube | -- | ✓ | ✓ | ✓ |
+| Actualizaciones zero-day de botnets | -- | ✓ | ✓ | ✓ |
+| Más de 5M de firmas de bots | -- | ✓ | ✓ | ✓ |
+| Motor de análisis de comportamiento | -- | ✓ | ✓ | ✓ |
+| Verificaciones cloud / mes | -- | 25k | 100k | 250k |
+| Desbloquear Addons | -- | ✓ | ✓ | ✓ |
+| Soporte prioritario | -- | ✓ | ✓ | ✓ |
+| Soporte de emergencia (24h) | -- | -- | -- | ✓ |
 | **Precio mensual** | **Free** | **$12** | **$50** | **$100** |
 | **Precio anual** | **Free** | **$11/mo** | **$45.8/mo** | **$91.6/mo** |
 
@@ -122,15 +131,6 @@ La facturación anual incluye 1 mes gratis. Licencia por dominio a través de Fr
 - **Caché** Soporte Redis / Memcached (desactivación automática en caso de fallo)
 - **CDN / DDoS** Compatible con Cloudflare, Sucuri, StackPath, DDoS-Guard, Stormwall
 - **Licencia** GPL-2.0+
-
----
-
-## Repositorios
-
-| Repositorio | Descripción |
-|---|---|
-| `botblocker-security` | Plugin de WordPress - firewall principal, CAPTCHA, 2FA, monitor de tráfico |
-| *(próximamente)* | |
 
 ---
 

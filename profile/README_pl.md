@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="https://ps.w.org/botblocker-security/assets/banner-1544x500.png?rev=3405280" alt="BotBlocker Security">
 </p>
 
@@ -59,8 +59,17 @@ Trzy warstwy przechwytywania zatrzymują złośliwy ruch na poziomie `wp-config.
 
 ### 🔒 Bezpieczeństwo Logowania i 2FA (Darmowe)
 - **Uwierzytelnianie Dwuskładnikowe** - standard TOTP (Google Authenticator, Authy, Bitwarden)
-- **9 trybów CAPTCHA** - Silent Auto-Verify, Shapes (Canvas 60fps), Colors, Images, Digits, Hold Button, Single Button, reCAPTCHA v2/v3
-- **Hybrydowe CAPTCHA** - połączenie wewnętrznego CAPTCHA z reCAPTCHA v3 dla dwuwarstwowej obrony
+- **9 trybów CAPTCHA**:
+  - **Silent Auto-Verify** -- prawdziwi użytkownicy przechodzą automatycznie bez klikania, boty widzą "Dostęp zabroniony"
+  - **Shapes CAPTCHA** -- Canvas 60fps z ruchomymi figurami geometrycznymi, ~100x trudniejsze do złamania przez AI niż reCAPTCHA
+  - **Color CAPTCHA** -- wybierz właściwą kombinację kolorów
+  - **Images CAPTCHA** -- wyzwanie rozpoznawania wizualnego
+  - **Digits CAPTCHA** -- weryfikacja numeryczna
+  - **Hold Button CAPTCHA** -- weryfikacja przez przytrzymanie przycisku
+  - **Single Button CAPTCHA** -- weryfikacja jednym kliknięciem
+  - **reCAPTCHA v2** -- Google "Nie jestem robotem"
+  - **reCAPTCHA v3** -- niewidoczna weryfikacja oparta na scoringu
+- **Hybrydowe CAPTCHA** -- połączenie dowolnego wewnętrznego CAPTCHA z reCAPTCHA v3 dla dwuwarstwowej niewidocznej obrony
 - **Ukryty URL logowania** *(PRO)*
 
 ### 💳 Obejście Bramek Płatności (Darmowe)
@@ -82,15 +91,15 @@ Automatyczne wykrywanie 25+ platform e-commerce i 150+ dostawców płatności (S
 | Wykrywanie fałszywych crawlerów (FCrDNS) | ✓ | ✓ | ✓ | ✓ |
 | Lokalne blokowanie botów | ✓ | ✓ | ✓ | ✓ |
 | Integracja z Redis / Memcached | ✓ | ✓ | ✓ | ✓ |
-| Tryb Early Init | — | ✓ | ✓ | ✓ |
-| Wywiad IP w chmurze | — | ✓ | ✓ | ✓ |
-| Aktualizacje botnetów zero-day | — | ✓ | ✓ | ✓ |
-| 5M+ sygnatur botów | — | ✓ | ✓ | ✓ |
-| Silnik analizy behawioralnej | — | ✓ | ✓ | ✓ |
-| Sprawdzeń cloud / mies. | — | 25k | 100k | 250k |
-| Odblokowanie Addonów | — | ✓ | ✓ | ✓ |
-| Priorytetowe wsparcie | — | ✓ | ✓ | ✓ |
-| Wsparcie alarmowe (24h) | — | — | — | ✓ |
+| Tryb Early Init | -- | ✓ | ✓ | ✓ |
+| Wywiad IP w chmurze | -- | ✓ | ✓ | ✓ |
+| Aktualizacje botnetów zero-day | -- | ✓ | ✓ | ✓ |
+| 5M+ sygnatur botów | -- | ✓ | ✓ | ✓ |
+| Silnik analizy behawioralnej | -- | ✓ | ✓ | ✓ |
+| Sprawdzeń cloud / mies. | -- | 25k | 100k | 250k |
+| Odblokowanie Addonów | -- | ✓ | ✓ | ✓ |
+| Priorytetowe wsparcie | -- | ✓ | ✓ | ✓ |
+| Wsparcie alarmowe (24h) | -- | -- | -- | ✓ |
 | **Cena miesięczna** | **Free** | **$12** | **$50** | **$100** |
 | **Cena roczna** | **Free** | **$11/mo** | **$45.8/mo** | **$91.6/mo** |
 
@@ -122,15 +131,6 @@ Rozliczenie roczne obejmuje 1 miesiąc za darmo. Licencja na domenę przez Freem
 - **Cache** Obsługa Redis / Memcached (automatyczne wyłączenie przy awarii)
 - **CDN / DDoS** Kompatybilny z Cloudflare, Sucuri, StackPath, DDoS-Guard, Stormwall
 - **Licencja** GPL-2.0+
-
----
-
-## Repozytoria
-
-| Repozytorium | Opis |
-|---|---|
-| `botblocker-security` | Wtyczka WordPress - główny firewall, CAPTCHA, 2FA, monitor ruchu |
-| *(wkrótce)* | |
 
 ---
 

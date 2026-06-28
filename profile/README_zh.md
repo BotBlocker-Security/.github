@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="https://ps.w.org/botblocker-security/assets/banner-1544x500.png?rev=3405280" alt="BotBlocker Security">
 </p>
 
@@ -59,8 +59,17 @@
 
 ### 🔒 登录安全与双因素认证（免费）
 - **双因素认证 (2FA)** - TOTP 标准（兼容 Google Authenticator、Authy、Bitwarden）
-- **9 种验证码模式** - 静默自动验证、Shapes（60fps Canvas）、颜色、图片、数字、长按按钮、单击按钮、reCAPTCHA v2/v3
-- **混合验证码** - 内部验证码与 reCAPTCHA v3 结合，双层防御
+- **9 种验证码模式**:
+  - **Silent Auto-Verify** -- 真实用户无点击自动通过，机器人看到"访问被拒绝"
+  - **Shapes CAPTCHA** -- 60fps Canvas 移动几何图形，AI 破解难度约为 reCAPTCHA 的 100 倍
+  - **Color CAPTCHA** -- 选择正确的颜色组合
+  - **Images CAPTCHA** -- 视觉识别挑战
+  - **Digits CAPTCHA** -- 数字验证
+  - **Hold Button CAPTCHA** -- 长按按钮人工验证
+  - **Single Button CAPTCHA** -- 单击验证
+  - **reCAPTCHA v2** -- Google "我不是机器人"
+  - **reCAPTCHA v3** -- 基于评分的隐形验证
+- **混合验证码** -- 将任意内置验证码与 reCAPTCHA v3 结合，实现双层隐形防护
 - **隐藏登录 URL** *(PRO)*
 
 ### 💳 支付网关绕过（免费）
@@ -82,15 +91,15 @@
 | 伪造爬虫检测 (FCrDNS) | ✓ | ✓ | ✓ | ✓ |
 | 本地机器人拦截 | ✓ | ✓ | ✓ | ✓ |
 | Redis / Memcached 集成 | ✓ | ✓ | ✓ | ✓ |
-| Early Init 模式 | — | ✓ | ✓ | ✓ |
-| 云端 IP 情报 | — | ✓ | ✓ | ✓ |
-| 零日僵尸网络更新 | — | ✓ | ✓ | ✓ |
-| 500万+ 机器人签名 | — | ✓ | ✓ | ✓ |
-| 行为分析引擎 | — | ✓ | ✓ | ✓ |
-| 云端检查/月 | — | 25k | 100k | 250k |
-| 解锁附加组件 | — | ✓ | ✓ | ✓ |
-| 优先支持 | — | ✓ | ✓ | ✓ |
-| 紧急支持 (24小时) | — | — | — | ✓ |
+| Early Init 模式 | -- | ✓ | ✓ | ✓ |
+| 云端 IP 情报 | -- | ✓ | ✓ | ✓ |
+| 零日僵尸网络更新 | -- | ✓ | ✓ | ✓ |
+| 500万+ 机器人签名 | -- | ✓ | ✓ | ✓ |
+| 行为分析引擎 | -- | ✓ | ✓ | ✓ |
+| 云端检查/月 | -- | 25k | 100k | 250k |
+| 解锁附加组件 | -- | ✓ | ✓ | ✓ |
+| 优先支持 | -- | ✓ | ✓ | ✓ |
+| 紧急支持 (24小时) | -- | -- | -- | ✓ |
 | **月付价格** | **Free** | **$12** | **$50** | **$100** |
 | **年付价格** | **Free** | **$11/mo** | **$45.8/mo** | **$91.6/mo** |
 
@@ -122,15 +131,6 @@
 - **缓存** 支持 Redis/Memcached（故障时自动禁用）
 - **CDN/DDoS** 兼容 Cloudflare、Sucuri、StackPath、DDoS-Guard、Stormwall
 - **许可证** GPL-2.0+
-
----
-
-## 代码仓库
-
-| 仓库 | 描述 |
-|---|---|
-| `botblocker-security` | WordPress 插件 - 核心防火墙、验证码、2FA、流量监控 |
-| *(更多即将推出)* | |
 
 ---
 

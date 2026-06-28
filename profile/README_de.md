@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="https://ps.w.org/botblocker-security/assets/banner-1544x500.png?rev=3405280" alt="BotBlocker Security">
 </p>
 
@@ -59,8 +59,17 @@ Drei Abfangschichten stoppen schädlichen Traffic auf `wp-config.php`-Ebene (vor
 
 ### 🔒 Login-Sicherheit & 2FA (Kostenlos)
 - **Zwei-Faktor-Authentifizierung** - TOTP-Standard (Google Authenticator, Authy, Bitwarden)
-- **9 CAPTCHA-Modi** - Silent Auto-Verify, Shapes (60fps Canvas), Colors, Images, Digits, Hold Button, Single Button, reCAPTCHA v2/v3
-- **Hybrid-CAPTCHA** - kombiniert internes CAPTCHA mit reCAPTCHA v3 für zweistufige Verteidigung
+- **9 CAPTCHA-Modi**:
+  - **Silent Auto-Verify** -- echte Nutzer passieren automatisch ohne Klicks, Bots sehen "Zugriff verweigert"
+  - **Shapes CAPTCHA** -- 60fps Canvas mit beweglichen geometrischen Figuren, ~100x schwerer für KI zu knacken als reCAPTCHA
+  - **Color CAPTCHA** -- wähle die richtige Farbkombination
+  - **Images CAPTCHA** -- visuelle Erkennungsaufgabe
+  - **Digits CAPTCHA** -- numerische Verifizierung
+  - **Hold Button CAPTCHA** -- Halten-zum-Verifizieren
+  - **Single Button CAPTCHA** -- Ein-Klick-Verifizierung
+  - **reCAPTCHA v2** -- Googles "Ich bin kein Roboter"
+  - **reCAPTCHA v3** -- unsichtbare score-basierte Verifizierung
+- **Hybrid-CAPTCHA** -- kombiniert beliebiges internes CAPTCHA mit reCAPTCHA v3 für zweistufige unsichtbare Verteidigung
 - **Login-URL verstecken** *(PRO)*
 
 ### 💳 Zahlungsgateway-Bypass (Kostenlos)
@@ -82,15 +91,15 @@ Auto-Erkennung von 25+ E-Commerce-Plattformen und 150+ Zahlungsanbietern (Stripe
 | Erkennung gefälschter Crawler (FCrDNS) | ✓ | ✓ | ✓ | ✓ |
 | Lokale Bot-Blockierung | ✓ | ✓ | ✓ | ✓ |
 | Redis / Memcached Integration | ✓ | ✓ | ✓ | ✓ |
-| Early Init Modus | — | ✓ | ✓ | ✓ |
-| Cloud IP Intelligence | — | ✓ | ✓ | ✓ |
-| Zero-Day Botnetz-Updates | — | ✓ | ✓ | ✓ |
-| 5M+ Bot-Signaturen | — | ✓ | ✓ | ✓ |
-| Verhaltensanalyse-Engine | — | ✓ | ✓ | ✓ |
-| Cloud-Prüfungen / Monat | — | 25k | 100k | 250k |
-| Addons freischalten | — | ✓ | ✓ | ✓ |
-| Prioritäts-Support | — | ✓ | ✓ | ✓ |
-| Notfall-Support (24h) | — | — | — | ✓ |
+| Early Init Modus | -- | ✓ | ✓ | ✓ |
+| Cloud IP Intelligence | -- | ✓ | ✓ | ✓ |
+| Zero-Day Botnetz-Updates | -- | ✓ | ✓ | ✓ |
+| 5M+ Bot-Signaturen | -- | ✓ | ✓ | ✓ |
+| Verhaltensanalyse-Engine | -- | ✓ | ✓ | ✓ |
+| Cloud-Prüfungen / Monat | -- | 25k | 100k | 250k |
+| Addons freischalten | -- | ✓ | ✓ | ✓ |
+| Prioritäts-Support | -- | ✓ | ✓ | ✓ |
+| Notfall-Support (24h) | -- | -- | -- | ✓ |
 | **Monatspreis** | **Free** | **$12** | **$50** | **$100** |
 | **Jahrespreis** | **Free** | **$11/mo** | **$45.8/mo** | **$91.6/mo** |
 
@@ -122,15 +131,6 @@ Jährliche Abrechnung beinhaltet 1 Monat gratis. Lizenziert pro Domain via Freem
 - **Cache** Redis / Memcached Unterstützung (automatische Deaktivierung bei Fehler)
 - **CDN / DDoS** Kompatibel mit Cloudflare, Sucuri, StackPath, DDoS-Guard, Stormwall
 - **Lizenz** GPL-2.0+
-
----
-
-## Repositories
-
-| Repository | Beschreibung |
-|---|---|
-| `botblocker-security` | WordPress-Plugin - Kern-Firewall, CAPTCHA, 2FA, Traffic-Monitor |
-| *(weitere folgen)* | |
 
 ---
 

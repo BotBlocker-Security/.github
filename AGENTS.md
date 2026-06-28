@@ -8,7 +8,7 @@
 
 ## Repository context
 
-This is the GitHub organization profile repository for **BotBlocker Security** — a WordPress firewall and bot protection plugin by GLOBUS.studio. The main content is in `profile/README.md`.
+This is the GitHub organization profile repository for **BotBlocker Security** -- a WordPress firewall and bot protection plugin by GLOBUS.studio. The main content is in `profile/README.md`.
 
 ### Key URLs
 
@@ -30,7 +30,7 @@ This is the GitHub organization profile repository for **BotBlocker Security** �
 
 ## Multilingual README management
 
-The `profile/` directory contains 11 README files — the English original plus 10 translations:
+The `profile/` directory contains 11 README files -- the English original plus 10 translations:
 
 | File | Language | Active label |
 |---|---|---|
@@ -100,6 +100,7 @@ Features by tier (verified against pricing page):
 - Changelog / version history
 - Installation instructions
 - FAQ
+- Repositories listing
 
 ## File structure
 

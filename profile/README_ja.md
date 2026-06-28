@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="https://ps.w.org/botblocker-security/assets/banner-1544x500.png?rev=3405280" alt="BotBlocker Security">
 </p>
 
@@ -59,8 +59,17 @@
 
 ### 🔒 ログインセキュリティ & 2FA（無料）
 - **二要素認証** - TOTP標準（Google Authenticator、Authy、Bitwarden対応）
-- **9種類のCAPTCHAモード** - サイレント自動検証、Shapes（60fps Canvas）、色、画像、数字、長押しボタン、シングルボタン、reCAPTCHA v2/v3
-- **ハイブリッドCAPTCHA** - 内部CAPTCHAとreCAPTCHA v3の組み合わせで2層防御
+- **9種類のCAPTCHAモード**:
+  - **Silent Auto-Verify** -- 実際のユーザーはクリックなしで自動通過、ボットには「アクセス拒否」を表示
+  - **Shapes CAPTCHA** -- 60fps Canvasの移動する幾何学図形、AIによる解読はreCAPTCHAより約100倍困難
+  - **Color CAPTCHA** -- 正しい色の組み合わせを選択
+  - **Images CAPTCHA** -- 視覚認識チャレンジ
+  - **Digits CAPTCHA** -- 数字認証
+  - **Hold Button CAPTCHA** -- 長押しボタンによる人間確認
+  - **Single Button CAPTCHA** -- ワンクリック認証
+  - **reCAPTCHA v2** -- Googleの「私はロボットではありません」
+  - **reCAPTCHA v3** -- スコアベースの不可視認証
+- **ハイブリッドCAPTCHA** -- 任意の内部CAPTCHAとreCAPTCHA v3を組み合わせた2層の不可視防御
 - **ログインURLの非表示** *(PRO)*
 
 ### 💳 決済ゲートウェイバイパス（無料）
@@ -82,15 +91,15 @@
 | 偽クローラー検出 (FCrDNS) | ✓ | ✓ | ✓ | ✓ |
 | ローカルボットブロック | ✓ | ✓ | ✓ | ✓ |
 | Redis / Memcached 統合 | ✓ | ✓ | ✓ | ✓ |
-| Early Init モード | — | ✓ | ✓ | ✓ |
-| クラウドIPインテリジェンス | — | ✓ | ✓ | ✓ |
-| ゼロデイボットネット更新 | — | ✓ | ✓ | ✓ |
-| 500万以上のボットシグネチャ | — | ✓ | ✓ | ✓ |
-| 行動分析エンジン | — | ✓ | ✓ | ✓ |
-| クラウドチェック / 月 | — | 25k | 100k | 250k |
-| アドオン解除 | — | ✓ | ✓ | ✓ |
-| 優先サポート | — | ✓ | ✓ | ✓ |
-| 緊急サポート (24時間) | — | — | — | ✓ |
+| Early Init モード | -- | ✓ | ✓ | ✓ |
+| クラウドIPインテリジェンス | -- | ✓ | ✓ | ✓ |
+| ゼロデイボットネット更新 | -- | ✓ | ✓ | ✓ |
+| 500万以上のボットシグネチャ | -- | ✓ | ✓ | ✓ |
+| 行動分析エンジン | -- | ✓ | ✓ | ✓ |
+| クラウドチェック / 月 | -- | 25k | 100k | 250k |
+| アドオン解除 | -- | ✓ | ✓ | ✓ |
+| 優先サポート | -- | ✓ | ✓ | ✓ |
+| 緊急サポート (24時間) | -- | -- | -- | ✓ |
 | **月額料金** | **Free** | **$12** | **$50** | **$100** |
 | **年額料金** | **Free** | **$11/mo** | **$45.8/mo** | **$91.6/mo** |
 
@@ -122,15 +131,6 @@
 - **キャッシュ** Redis / Memcached対応（障害時に自動無効化）
 - **CDN / DDoS** Cloudflare、Sucuri、StackPath、DDoS-Guard、Stormwall対応
 - **ライセンス** GPL-2.0+
-
----
-
-## リポジトリ
-
-| リポジトリ | 説明 |
-|---|---|
-| `botblocker-security` | WordPressプラグイン - コアファイアウォール、CAPTCHA、2FA、トラフィックモニター |
-| *(近日公開)* | |
 
 ---
 

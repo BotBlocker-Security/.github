@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="https://ps.w.org/botblocker-security/assets/banner-1544x500.png?rev=3405280" alt="BotBlocker Security">
 </p>
 
@@ -59,8 +59,17 @@ Three interception layers stop bad traffic at `wp-config.php` (before WordPress)
 
 ### 🔒 Login Security & 2FA (Free)
 - **Two-Factor Authentication** - TOTP standard (Google Authenticator, Authy, Bitwarden)
-- **9 CAPTCHA modes** - Silent Auto-Verify, Shapes (60fps Canvas), Colors, Images, Digits, Hold Button, Single Button, reCAPTCHA v2/v3
-- **Hybrid CAPTCHA** - combine internal CAPTCHA with reCAPTCHA v3 for two-layer defense
+- **9 CAPTCHA modes**:
+  - **Silent Auto-Verify** -- real users pass automatically with zero clicks, bots see "Access denied"
+  - **Shapes CAPTCHA** -- 60fps Canvas with moving geometric figures, ~100x harder for AI to crack than reCAPTCHA
+  - **Color CAPTCHA** -- select the correct color combination
+  - **Images CAPTCHA** -- visual recognition challenge
+  - **Digits CAPTCHA** -- numeric verification
+  - **Hold Button CAPTCHA** -- press-and-hold human verification
+  - **Single Button CAPTCHA** -- one-click verification
+  - **reCAPTCHA v2** -- Google's "I'm not a robot"
+  - **reCAPTCHA v3** -- invisible score-based verification
+- **Hybrid CAPTCHA** -- combine any internal CAPTCHA with reCAPTCHA v3 for two-layer invisible defense
 - **Hide login URL** *(PRO)*
 
 ### 💳 Payment Gateway Bypass (Free)
@@ -82,15 +91,15 @@ Auto-detects 25+ e-commerce platforms and 150+ payment providers (Stripe, PayPal
 | Fake crawler detection (FCrDNS) | ✓ | ✓ | ✓ | ✓ |
 | Local bot blocking | ✓ | ✓ | ✓ | ✓ |
 | Redis / Memcached integration | ✓ | ✓ | ✓ | ✓ |
-| Early Init Mode | — | ✓ | ✓ | ✓ |
-| Cloud IP intelligence | — | ✓ | ✓ | ✓ |
-| Zero-day botnet updates | — | ✓ | ✓ | ✓ |
-| 5M+ bots signatures | — | ✓ | ✓ | ✓ |
-| Behavioral analysis engine | — | ✓ | ✓ | ✓ |
-| Cloud checks / month | — | 25k | 100k | 250k |
-| Unlock Addons | — | ✓ | ✓ | ✓ |
-| Priority support | — | ✓ | ✓ | ✓ |
-| Emergency support (24h) | — | — | — | ✓ |
+| Early Init Mode | -- | ✓ | ✓ | ✓ |
+| Cloud IP intelligence | -- | ✓ | ✓ | ✓ |
+| Zero-day botnet updates | -- | ✓ | ✓ | ✓ |
+| 5M+ bots signatures | -- | ✓ | ✓ | ✓ |
+| Behavioral analysis engine | -- | ✓ | ✓ | ✓ |
+| Cloud checks / month | -- | 25k | 100k | 250k |
+| Unlock Addons | -- | ✓ | ✓ | ✓ |
+| Priority support | -- | ✓ | ✓ | ✓ |
+| Emergency support (24h) | -- | -- | -- | ✓ |
 | **Monthly price** | **Free** | **$12** | **$50** | **$100** |
 | **Annual price** | **Free** | **$11/mo** | **$45.8/mo** | **$91.6/mo** |
 
@@ -122,15 +131,6 @@ Annual billing includes 1 month free. Licensed per domain via Freemius.
 - **Cache** Redis / Memcached support (auto-disable on failure)
 - **CDN / DDoS** Cloudflare, Sucuri, StackPath, DDoS-Guard, Stormwall compatible
 - **License** GPL-2.0+
-
----
-
-## Repositories
-
-| Repository | Description |
-|---|---|
-| `botblocker-security` | WordPress plugin - core firewall, CAPTCHA, 2FA, traffic monitor |
-| *(more coming)* | |
 
 ---
 
