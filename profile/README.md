@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[https://raw.githubusercontent.com/BotBlocker/.github/main/profile/botblocker-logo.png](https://ps.w.org/botblocker-security/assets/banner-1544x500.png?rev=3405280)"  alt="BotBlocker Security">
+  <img src="https://ps.w.org/botblocker-security/assets/banner-1544x500.png?rev=3405280" alt="BotBlocker Security">
 </p>
 
 <h1 align="center">BotBlocker Security</h1>
