@@ -11,6 +11,7 @@
 
 <p align="center">
   <a href="https://botblocker.top">Website</a> ·
+  <a href="https://wordpress.org/plugins/botblocker-security/">WordPress.org</a> ·
   <a href="https://botblocker.top/docs/">Documentation</a> ·
   <a href="https://botblocker.top/pricing/">Pricing</a> ·
   <a href="https://botblocker.top/community/">Community</a>
@@ -103,6 +104,7 @@ Auto-detects 25+ e-commerce platforms and 150+ payment providers (Stripe, PayPal
 ## Links
 
 - 🌐 [botblocker.top](https://botblocker.top/)
+- 🔌 [WordPress.org Plugin](https://wordpress.org/plugins/botblocker-security/)
 - 📖 [Documentation](https://botblocker.top/docs/)
 - 💰 [Pricing](https://botblocker.top/pricing/)
 - 💬 [Community](https://botblocker.top/community/)
